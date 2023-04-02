@@ -1,0 +1,8 @@
+#include <stdio.h>
+int main(void) {
+    printf("Vvedit chyslo: \n");
+    float gryvnya, result;
+    scanf("%f", &gryvnya);
+    result = gryvnya / 40;
+    printf("%f", result);
+}
