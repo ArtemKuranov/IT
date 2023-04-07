@@ -2,14 +2,11 @@
 
 int main(void) {
     printf("Vvedit masy: \n");
-    float masa;
+    float masa, shvydkist, kinetychna, result;
     printf("vvddit shvydkist: \n");
-    float shvydkist;
     scanf("%f", &masa);
     scanf("%f", &shvydkist);
-    float kinetychna;
     kinetychna = masa * shvydkist;
-    float result;
     result = kinetychna / 2;
     printf("%f", result);
 }
