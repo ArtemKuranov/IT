@@ -1,0 +1,19 @@
+#include <stdio.h>
+
+int main(void) {
+    printf("Vvedit tciny: \n");
+    float tciny, result;
+    scanf("%f", &tciny);
+    if (tciny >= 100) {
+        result = tciny - ((tciny * 7) / 100);
+        printf("%f\n", result);
+    }
+    if (tciny >= 50 , tciny < 100) {
+        result = tciny - ((tciny * 5) / 100);
+        printf("%f\n", result);
+    }
+    if (tciny < 50 ) {
+        result = tciny;
+    printf("%f", result);
+    }
+}
