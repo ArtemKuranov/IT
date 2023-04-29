@@ -1,0 +1,15 @@
+#include <stdio.h>
+
+int main(void) {
+    printf("Vvedit tryvalist: \n");
+    float tryvalist, result;
+    scanf("%f", &tryvalist);
+    if (tryvalist >= 10) {
+        result = tryvalist * 1;
+        printf("%f\n", result);
+    }
+    if (tryvalist < 10 ) {
+        result = tryvalist * 1.2;
+    printf("%f", result);
+    }
+}
