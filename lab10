@@ -1,0 +1,39 @@
+#include <stdio.h>
+#include <stdbool.h>
+
+struct Woshmash {
+  char name[10];
+  char garant[10];
+  int price;
+  int power;
+  bool mehanik; 
+};
+int main(){
+  struct Woshmash wosh[5] = {
+    {"Vinga", "11 years", 20000, 220, true},
+    {"Samsung", "10 years", 9000, 310, false},
+    {"Nikia", "12 years", 14000, 240, false},
+    {"Canon", "9 years", 11000, 275, false},
+    {"Boomel", "8 years", 18000, 280, true}
+  };
+  for (int i=0; i<5; ++i) {
+    int k = i;
+    for (int j=i+1; j<5; ++j) {
+      if (wosh[j].power < wosh[k].power){
+        k = j;
+      }
+    }
+    if (i != k) {
+      struct Woshmash tmp = wosh[i];
+      wosh[i] = wosh[k];
+      wosh[k] = tmp;
+    }
+  }
+  for (int i=0; i<5; ++i){
+    if(wosh[i].mehanik == false){
+    printf("%s %d\n", wosh[i].name, wosh[i].power);
+    }
+  }
+
+  return 0;
+}
