@@ -1,0 +1,17 @@
+#include <stdio.h>
+
+int main(){
+ 
+ char firstname[20];
+ char surname[20];
+ char patronymic[20];
+ puts("Ur name");
+ scanf("%s", firstname);
+ puts("Ur surname");
+ scanf("%s", surname);
+ puts("Ur patronymic");
+ scanf("%s", patronymic);
+ 
+ printf("Hello %s %s %s. How do you do?", surname, firstname, patronymic);
+  return 0;
+}
